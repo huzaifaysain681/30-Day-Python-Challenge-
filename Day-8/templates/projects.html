@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="/projects">Projects</a> | 
+            <a href="#about">About</a> | 
+            <a href="#experience">Experience</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="project-grid">
+        <div class="project-card">
+            <!-- <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1"> -->
+            <h3>Project 1: Automated Vulnerability Scanner</h3>
+            <p>
+                A comprehensive tool for scanning web applications for security vulnerabilities. Built with Python, this project integrates 
+                multiple scanning techniques to identify and report common security issues like SQL Injection, Cross-Site Scripting (XSS), 
+                and more. The tool is designed with a user-friendly interface and offers detailed reports for easy analysis.
+            </p>
+            <p>
+                <strong>Technologies Used:</strong> Python, Flask, SQLAlchemy, HTML, CSS
+            </p>
+            <p>
+                <a href="https://github.com/yourusername/automated-vulnerability-scanner" target="_blank">View on GitHub</a>
+            </p>
+        </div>
+
+        <div class="project-card">
+            <!-- <img src="{{ url_for('static', filename='project2.jpg') }}" alt="Project 2"> -->
+            <h3>Project 2: Personal Assistant on Kali Linux</h3>
+            <p>
+                A Jarvis-like assistant created to streamline daily tasks on Kali Linux. This assistant can provide updates, run scripts, 
+                and assist with system management. It showcases the power of automation in a security-focused environment and is fully customizable.
+            </p>
+            <p>
+                <strong>Technologies Used:</strong> Python, Bash, Linux (Kali)
+            </p>
+            <p>
+                <a href="https://github.com/yourusername/personal-assistant-kali-linux" target="_blank">View on GitHub</a>
+            </p>
+        </div>
+
+        <div class="project-card">
+            <!-- <img src="{{ url_for('static', filename='project3.jpg') }}" alt="Project 3"> -->
+            <h3>Project 3: Responsive Portfolio Website</h3>
+            <p>
+                This portfolio website is designed to showcase my skills and projects. It features a responsive design, smooth animations, 
+                and interactive elements. Built with Flask and Bootstrap, it's a testament to modern web development practices and a 
+                central hub for my professional presence online.
+            </p>
+            <p>
+                <strong>Technologies Used:</strong> Flask, Bootstrap, HTML, CSS, JavaScript
+            </p>
+            <p>
+                <a href="https://github.com/yourusername/portfolio-website" target="_blank">View on GitHub</a>
+            </p>
+        </div>
+
+        <div class="project-card">
+            <!-- <img src="{{ url_for('static', filename='project4.jpg') }}" alt="Project 4"> -->
+            <h3>Project 4: 30-Day Python Challenge</h3>
+            <p>
+                A series of projects and exercises completed as part of a 30-day challenge to improve my Python programming skills. 
+                Each day focuses on a different aspect of Python, from basics to advanced topics like web scraping, automation, and API integration.
+            </p>
+            <p>
+                <strong>Technologies Used:</strong> Python, Flask, BeautifulSoup, Requests
+            </p>
+            <p>
+                <a href="https://github.com/yourusername/30-day-python-challenge" target="_blank">View on GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a> |
+        <a href="mailto:yourname@example.com">Email</a>
+    </footer>
+</body>
+</html>

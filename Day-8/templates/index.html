@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="/projects">Projects</a> | 
+            <a href="#about">About</a> | 
+            <a href="#experience">Experience</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Huzaifa, a dedicated software developer with a passion for crafting innovative solutions in web development, automation, and cybersecurity. 
+            With a strong foundation in Python and a deep understanding of modern web technologies, I thrive in building secure, scalable, and user-friendly applications.
+        </p>
+        <p>
+            Over the years, I have honed my skills through various projects, ranging from building automated tools for vulnerability scanning to creating dynamic, responsive web applications. 
+            My curiosity and commitment to continuous learning drive me to stay updated with the latest industry trends and best practices.
+        </p>
+        <p>
+            I am particularly interested in the intersection of security and development, and I am always exploring new ways to integrate security best practices into my development workflow.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS, SQL</li>
+            <li><strong>Frameworks:</strong> Flask, Django, React, Bootstrap</li>
+            <li><strong>Tools & Platforms:</strong> Git, Docker, Heroku, AWS, Linux (Kali, Ubuntu)</li>
+            <li><strong>Database Management:</strong> MySQL, PostgreSQL, SQLite</li>
+            <li><strong>Cybersecurity:</strong> Web Application Security, Network Security, Vulnerability Scanning, Penetration Testing</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Software Developer Intern - [Company Name]</h3>
+            <p><em>Jan 2024 - Present</em></p>
+            <ul>
+                <li>Developed and maintained web applications using Flask and Django, improving the performance and scalability of the company's internal tools.</li>
+                <li>Collaborated with the cybersecurity team to integrate security best practices into the development process, reducing vulnerabilities by 30%.</li>
+                <li>Automated various deployment tasks using Docker and CI/CD pipelines, reducing deployment time by 50%.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Web Development Intern - [Company Name]</h3>
+            <p><em>Jun 2023 - Dec 2023</em></p>
+            <ul>
+                <li>Assisted in the design and development of responsive web applications using React and Bootstrap.</li>
+                <li>Worked closely with UX/UI designers to implement user-friendly features and ensure cross-browser compatibility.</li>
+                <li>Conducted code reviews and implemented performance optimizations, resulting in a 20% reduction in load times.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/contact" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a> |
+        <a href="mailto:yourname@example.com">Email</a>
+    </footer>
+</body>
+</html>
